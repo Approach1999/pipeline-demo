@@ -5,8 +5,4 @@ RUN apt-get update && apt-get install -y wget tar binutils build-essential && \
     tar -xzf /tmp/cangjie-sdk.tar.gz -C /opt && \
     rm /tmp/cangjie-sdk.tar.gz
 
-ENV CANGJIE_HOME=/opt/cangjie
-ENV PATH=/opt/cangjie/bin:/opt/cangjie/tools/bin:$PATH
-ENV LD_LIBRARY_PATH=/opt/cangjie/runtime/lib/linux_x86_64_cjnative:$LD_LIBRARY_PATH
-
 WORKDIR /workspace

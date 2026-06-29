@@ -27,6 +27,7 @@ jobs:
       - name: Run Cangjie unit tests in container
         run: |
           docker run --rm -v $PWD:/workspace cangjie-ci:latest bash -c "
+            . /opt/cangjie/envsetup.sh
             echo '=== Cangjie Containerized CI ==='
             cjc --version
             echo ''
