@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  cangjie:
+    build: .
+    image: cangjie-ci:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: >
+      bash -c "
+        cjc --version &&
+        cjpm build &&
+        cjpm test
+      "

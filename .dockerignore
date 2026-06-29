@@ -1,0 +1,8 @@
+target/
+cjpm.lock
+.cache/
+.vscode/
+.idea/
+*.macrocall
+tmp*
+cangjie-sdk*.tar.gz
