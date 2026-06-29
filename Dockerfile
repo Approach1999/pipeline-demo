@@ -10,4 +10,3 @@ ENV PATH=/opt/cangjie/bin:/opt/cangjie/tools/bin:$PATH
 ENV LD_LIBRARY_PATH=/opt/cangjie/runtime/lib/linux_x86_64_cjnative:$LD_LIBRARY_PATH
 
 WORKDIR /workspace
-ENTRYPOINT ["/bin/bash"]
